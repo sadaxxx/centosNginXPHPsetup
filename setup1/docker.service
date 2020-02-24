@@ -1,0 +1,11 @@
+[Unit]
+Description=dockerd daemon start
+
+[install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/dockerd
+Restart=always
+User=root
+Group=docker
